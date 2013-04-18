@@ -6,8 +6,6 @@ description      "Installs/Configures buggy-cookbook"
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          "0.1.0"
 
-depends "apt"
-
 recipe "buggy-cookbook::default", "Installs the apache webserver"
 recipe "buggy-cookbook::simple_index", "Uses a template resource to setup a simple page"
   
