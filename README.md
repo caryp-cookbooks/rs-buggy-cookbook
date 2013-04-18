@@ -25,7 +25,7 @@ There is a bug in both recipes.  They are pretty simple so I will leave it to yo
 
 ```buggy-cookbook::default``` : Installs the apache webserver
 
-```buggy-cookbook::simple_index``` : Uses a template resource to setup a simple page.
+```buggy-cookbook::simple_index``` : Uses a template resource to setup a simple page
 
 
 # Author

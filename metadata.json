@@ -1,0 +1,74 @@
+{
+  "name": "buggy-cookbook",
+  "description": "Installs/Configures buggy-cookbook",
+  "long_description": "# buggy-cookbook cookbook\n\nA simple cookbook to demonstrate how to debug errors.  Once all the errors are fixed the server should display a very simple apache2 index.html page owned by the root user.\n\nI've already said too much ;)\n\n# Requirements\n\nRequires Chef 0.10.10 or later.  \nTested on Ubuntu 12.04\n\n# Usage\n\nAdd the following runlist to your server:\n\n    [\n      \"recipe[apt::default]\",\n      \"recipe[buggy-cookbook::default]\",\n      \"recipe[buggy-cookbook::simple_index]\"\n    ]\n    \nThere is a bug in both recipes.  They are pretty simple so I will leave it to you to find them.\n\n# Recipes\n\n```buggy-cookbook::default``` : Installs the apache webserver\n\n```buggy-cookbook::simple_index``` : Uses a template resource to setup a simple page\n\n\n# Author\n\nAuthor:: kindsol (<kindsol2--at--gmail>)\n",
+  "maintainer": "kindsol",
+  "maintainer_email": "kindsol2--at--gmail",
+  "license": "Apache 2.0",
+  "platforms": {
+  },
+  "dependencies": {
+    "apt": ">= 0.0.0"
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+    "buggy-cookbook/title": {
+      "display_name": "Index Page Title",
+      "description": "Title the index.html page",
+      "required": "optional",
+      "default": "",
+      "recipes": [
+        "buggy-cookbook::simple_index"
+      ],
+      "choice": [
+
+      ],
+      "calculated": false,
+      "type": "string"
+    },
+    "buggy-cookbook/header": {
+      "display_name": "Index Page Header",
+      "description": "Header on the index.html page",
+      "required": "optional",
+      "default": "",
+      "recipes": [
+        "buggy-cookbook::simple_index"
+      ],
+      "choice": [
+
+      ],
+      "calculated": false,
+      "type": "string"
+    },
+    "buggy-cookbook/message": {
+      "display_name": "Index Page Test",
+      "description": "Text for the main paragraph on the index.html page",
+      "required": "optional",
+      "default": "",
+      "recipes": [
+        "buggy-cookbook::simple_index"
+      ],
+      "choice": [
+
+      ],
+      "calculated": false,
+      "type": "string"
+    }
+  },
+  "groupings": {
+  },
+  "recipes": {
+    "default": "Installs the apache webserver",
+    "simple_index": "Uses a template resource to setup a simple page"
+  },
+  "version": "0.1.0"
+}
