@@ -1,0 +1,1 @@
+cookbook 'buggy-cookbook', :path => '/Users/caryp/cookbooks/buggy-cookbook'
