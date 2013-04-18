@@ -8,8 +8,8 @@ version          "0.1.0"
 
 depends "apt"
 
-recipe "default", "Installs the apache webserver"
-recipe "simple_index", "Uses a template resource to setup a simple page"
+recipe "buggy-cookbook::default", "Installs the apache webserver"
+recipe "buggy-cookbook::simple_index", "Uses a template resource to setup a simple page"
   
 attribute "buggy-cookbook/title",
   :display_name => "Index Page Title",

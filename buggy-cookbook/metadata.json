@@ -67,8 +67,8 @@
   "groupings": {
   },
   "recipes": {
-    "default": "Installs the apache webserver",
-    "simple_index": "Uses a template resource to setup a simple page"
+    "buggy-cookbook::default": "Installs the apache webserver",
+    "buggy-cookbook::simple_index": "Uses a template resource to setup a simple page"
   },
   "version": "0.1.0"
 }
