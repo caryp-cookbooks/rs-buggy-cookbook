@@ -27,6 +27,25 @@ There is a bug in both recipes.  They are pretty simple so I will leave it to yo
 
 ```buggy-cookbook::simple_index``` : Uses a template resource to setup a simple page
 
+# Demo Outline
+
+## Pre-demo Prep
+* Clean up prompt for demo
+* Boot server to stranding
+* Two terminals: cookbook dir and server ssh session
+* fix motd
+* Server view in RightScale Dashboard.
+
+## Outline
+* Show dashboard, stranded server, download_cookbooks_once tag and audits
+* rs_run_recipe -n buggy-cookbook::default && tailf /var/log/syslog -- see it fail
+* make change, sync code, re-run -- pass!
+* reboot now?  Nope run te rest of the recipes in boot list from dash.
+
+
+
+
+
 
 # Author
 
